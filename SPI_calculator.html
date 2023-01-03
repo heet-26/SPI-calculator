@@ -9,98 +9,183 @@
 		<h1>SPI Calculator</h1>
 		<h2>Branch: Electronics and Communication Engineering</h2>
 		<h4>Semster-3</h4>
-		<div class="head">Subjects:</div>
-		<div class="section-box">
-			<label for="sublist">VCPD:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<h3>VCPD:</h3>
+						<select id="s1">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<h3>Digital Logic Design:</h3>
+						<select id="s2">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<h3>Elctronics Devices and Circuit:</h3>
+						<select id="s3">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<h3>Network Theory:</h3>
+						<select id="s4">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<h3>Principle of Economics:</h3>
+						<select id="s6">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<h3>Signal and System:</h3>
+						<select id="s5">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<h3>Digital Logic Design Lab:</h3>
+						<select id="s7">
+							<option>A+</option>
+							<option>A</option>
+							<option>B+</option>
+							<option>B</option>
+							<option>C+</option>
+							<option>C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td><br /><br /><br /></td>
+				</tr>
+				<tr>
+					<td>
+						<button onclick="calculate()" id="but">Go</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script>
+			function calculate() {
+				var temp = 0;
+
+				var grd = document.getElementById("s1").value;
+				if (grd == "A+") temp += 10 * 4;
+				if (grd == "A") temp += 9 * 4;
+				if (grd == "B+") temp += 8 * 4;
+				if (grd == "B") temp += 7 * 4;
+				if (grd == "C+") temp += 6 * 4;
+				if (grd == "C") temp += 5 * 4;
+
+				var grd = document.getElementById("s2").value;
+				if (grd == "A+") temp += 10 * 4;
+				if (grd == "A") temp += 9 * 4;
+				if (grd == "B+") temp += 8 * 4;
+				if (grd == "B") temp += 7 * 4;
+				if (grd == "C+") temp += 6 * 4;
+				if (grd == "C") temp += 5 * 4;
+
+				var grd = document.getElementById("s3").value;
+				if (grd == "A+") temp += 10 * 4;
+				if (grd == "A") temp += 9 * 4;
+				if (grd == "B+") temp += 8 * 4;
+				if (grd == "B") temp += 7 * 4;
+				if (grd == "C+") temp += 6 * 4;
+				if (grd == "C") temp += 5 * 4;
+
+				var grd = document.getElementById("s4").value;
+				if (grd == "A+") temp += 10 * 3;
+				if (grd == "A") temp += 9 * 3;
+				if (grd == "B+") temp += 8 * 3;
+				if (grd == "B") temp += 7 * 3;
+				if (grd == "C+") temp += 6 * 3;
+				if (grd == "C") temp += 5 * 3;
+
+				var grd = document.getElementById("s5").value;
+				if (grd == "A+") temp += 10 * 3;
+				if (grd == "A") temp += 9 * 3;
+				if (grd == "B+") temp += 8 * 3;
+				if (grd == "B") temp += 7 * 3;
+				if (grd == "C+") temp += 6 * 3;
+				if (grd == "C") temp += 5 * 3;
+
+				var grd = document.getElementById("s6").value;
+				if (grd == "A+") temp += 10 * 2;
+				if (grd == "A") temp += 9 * 2;
+				if (grd == "B+") temp += 8 * 2;
+				if (grd == "B") temp += 7 * 2;
+				if (grd == "C+") temp += 6 * 2;
+				if (grd == "C") temp += 5 * 2;
+
+				var grd = document.getElementById("s7").value;
+				if (grd == "A+") temp += 10 * 1;
+				if (grd == "A") temp += 9 * 1;
+				if (grd == "B+") temp += 8 * 1;
+				if (grd == "B") temp += 7 * 1;
+				if (grd == "C+") temp += 6 * 1;
+				if (grd == "C") temp += 5 * 1;
+
+				document.getElementById("a2").innerHTML =
+					"SPI: " + (temp / 21).toFixed(4);
+			}
+		</script>
+		<div class="ans">
+			<h2 id="a2"></h2>
 		</div>
-		<div class="section-box">
-			<label for="sublist">Electronics Devices and Circuits:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
-		</div>
-		<div class="section-box">
-			<label for="sublist">Digital Logic Design:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
-		</div>
-		<div class="section-box">
-			<label for="sublist">Network Theorey:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
-		</div>
-		<div class="section-box">
-			<label for="sublist">Signal and Systems:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
-		</div>
-		<div class="section-box">
-			<label for="sublist">Principle of Economics:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
-		</div>
-		<div class="section-box">
-			<label for="sublist">Digital Logic Design Lab:</label>
-			<div class="sub_name"></div>
-			<select id="sublist" name="sublist">
-				<option value="AP">A+</option>
-				<option value="A">A</option>
-				<option value="BP">B+</option>
-				<option value="B">B</option>
-				<option value="CP">C+</option>
-				<option value="C">C</option>
-				<option value="F">F</option>
-			</select>
-		</div>
-		<button type="submit" class="btn">GO</button>
 	</body>
 </html>
