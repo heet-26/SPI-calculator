@@ -25,7 +25,7 @@
 						<tbody>
 							<tr>
 								<td>
-									<h3>VCPD:</h3>
+									<div class="sm1">VCPD:</div>
 									<select id="s1">
 										<option>A+</option>
 										<option>A</option>
@@ -39,7 +39,7 @@
 
 							<tr>
 								<td>
-									<h3>Digital Logic Design:</h3>
+									<div class="sm2">Digital Logic Design:</div>
 									<select id="s2">
 										<option>A+</option>
 										<option>A</option>
@@ -53,7 +53,7 @@
 
 							<tr>
 								<td>
-									<h3>Elctronics Devices and Circuit:</h3>
+									<div class="sm3">Elctronics Devices and Circuit:</div>
 									<select id="s3">
 										<option>A+</option>
 										<option>A</option>
@@ -67,7 +67,7 @@
 
 							<tr>
 								<td>
-									<h3>Network Theory:</h3>
+									<div class="sm4">Network Theory:</div>
 									<select id="s4">
 										<option>A+</option>
 										<option>A</option>
@@ -81,7 +81,7 @@
 
 							<tr>
 								<td>
-									<h3>Principle of Economics:</h3>
+									<div class="sm5">Principle of Economics:</div>
 									<select id="s6">
 										<option>A+</option>
 										<option>A</option>
@@ -95,7 +95,7 @@
 
 							<tr>
 								<td>
-									<h3>Signal and System:</h3>
+									<div class="sm6">Signal and System:</div>
 									<select id="s5">
 										<option>A+</option>
 										<option>A</option>
@@ -109,7 +109,7 @@
 
 							<tr>
 								<td>
-									<h3>Digital Logic Design Lab:</h3>
+									<div class="sm7">Digital Logic Design Lab:</div>
 									<select id="s7">
 										<option>A+</option>
 										<option>A</option>
@@ -126,12 +126,19 @@
 									<button onclick="calculate()" id="but">Go</button>
 								</td>
 							</tr>
+							<tr>
+								<td>
+									<div class="ans">
+										<h2 id="a2"></h2>
+									</div>
+								</td>
+							</tr>
 						</tbody>
 					</table>
+					<footer class="ft">Developed By Heet Depani</footer>
 				</div>
 			</div>
 		</div>
-
 		<script>
 			function calculate() {
 				var temp = 0;
@@ -196,8 +203,5 @@
 					"SPI: " + (temp / 21).toFixed(4);
 			}
 		</script>
-		<div class="ans">
-			<h2 id="a2"></h2>
-		</div>
 	</body>
 </html>
