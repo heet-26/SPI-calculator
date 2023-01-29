@@ -1,0 +1,192 @@
+<!--
+    DEVELOPED BY-Vyom Padalia,Parth Thakkar and Heet Depani 
+THIS IS SPI CALCULATOR FOR 3RD SEM EC NIRMA UNI.
+SOLELY FOR PROJECT AND LEARNING PURPOSE 
+-->
+<!-- /* `
+FINAL 
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SPI CALCULATOR</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<nav class="navinfo">
+			<p class="navt">SPI CALCULATOR</p>
+			<hr class="navhr" />
+			<p class="navsub">Branch-Computer science Engg.</p>
+			<p class="navsub">Sem-03</p>
+		</nav>
+		<div class="main">
+			<table>
+				<tr>
+					<th>SUBJECTS</th>
+					<th>CREDITS</th>
+					<th>GRADE OBTAINED</th>
+				</tr>
+
+				<tr>
+					<td class="sub">Mathematics 1</td>
+					<td class="sub">3 (Theory)</td>
+					<td class="">
+						<select name="" id="s1">
+							<option value="A+">A+</option>
+							<option value="A">A</option>
+							<option value="B+">B+</option>
+							<option value="B">B</option>
+							<option value="C+">C+</option>
+							<option value="C">C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="sub">EGD and Workshop</td>
+					<td class="sub">3 (Theory)</td>
+					<td class="">
+						<select name="" id="s2">
+							<option value="A+">A+</option>
+							<option value="A">A</option>
+							<option value="B+">B+</option>
+							<option value="B">B</option>
+							<option value="C+">C+</option>
+							<option value="C">C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="sub">Statics</td>
+					<td class="sub">3 (Theory)</td>
+					<td class="">
+						<select name="" id="s3">
+							<option value="A+">A+</option>
+							<option value="A">A</option>
+							<option value="B+">B+</option>
+							<option value="B">B</option>
+							<option value="C+">C+</option>
+							<option value="C">C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="sub">Written Communication</td>
+					<td class="sub">3 (Theory)</td>
+					<td class="">
+						<select name="" id="s4">
+							<option value="A+">A+</option>
+							<option value="A">A</option>
+							<option value="B+">B+</option>
+							<option value="B">B</option>
+							<option value="C+">C+</option>
+							<option value="C">C</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="sub">Computer Programming</td>
+					<td class="sub">3 (Theory)</td>
+					<td class="">
+						<select name="" id="s5">
+							<option value="A+">A+</option>
+							<option value="A">A</option>
+							<option value="B+">B+</option>
+							<option value="B">B</option>
+							<option value="C+">C+</option>
+							<option value="C">C</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td class="sub"></td>
+					<td class="final">
+						<button onclick="calc()" class="but" id="but">Calculate</button>
+					</td>
+					<td class="ans" id="a2"></td>
+				</tr>
+			</table>
+		</div>
+		<br />
+		<p class="footer">©2023 The Aspirants</p>
+		<hr />
+	</body>
+
+	<script>
+		function calc() {
+			var t = 0;
+
+			//Math
+			var grd = document.getElementById("s1").value;
+			if (grd == "A+") t += 10 * 3;
+			if (grd == "A") t += 9 * 3;
+			if (grd == "B+") t += 8 * 3;
+			if (grd == "B") t += 7 * 3;
+			if (grd == "C+") t += 6 * 3;
+			if (grd == "C") t += 5 * 3;
+
+			//EGD
+			var grd = document.getElementById("s2").value;
+			if (grd == "A+") t += 10 * 3;
+			if (grd == "A") t += 9 * 3;
+			if (grd == "B+") t += 8 * 3;
+			if (grd == "B") t += 7 * 3;
+			if (grd == "C+") t += 6 * 3;
+			if (grd == "C") t += 5 * 3;
+
+			//MOS
+			var grd = document.getElementById("s3").value;
+			if (grd == "A+") t += 10 * 3;
+			if (grd == "A") t += 9 * 3;
+			if (grd == "B+") t += 8 * 3;
+			if (grd == "B") t += 7 * 3;
+			if (grd == "C+") t += 6 * 3;
+			if (grd == "C") t += 5 * 3;
+
+			//Thermo
+			var grd = document.getElementById("s4").value;
+			if (grd == "A+") t += 10 * 3;
+			if (grd == "A") t += 9 * 3;
+			if (grd == "B+") t += 8 * 3;
+			if (grd == "B") t += 7 * 3;
+			if (grd == "C+") t += 6 * 3;
+			if (grd == "C") t += 5 * 3;
+
+			//CP
+			var grd = document.getElementById("s5").value;
+			if (grd == "A+") t += 10 * 3;
+			if (grd == "A") t += 9 * 3;
+			if (grd == "B+") t += 8 * 3;
+			if (grd == "B") t += 7 * 3;
+			if (grd == "C+") t += 6 * 3;
+			if (grd == "C") t += 5 * 3;
+
+			// //ICAD lab
+			// var grd = document.getElementById("s6").value;
+			// if (grd == "A+") t += 10 * 3;
+			// if (grd == "A") t += 9 * 3;
+			// if (grd == "B+") t += 8 * 3;
+			// if (grd == "B") t += 7 * 3;
+			// if (grd == "C+") t += 6 * 3;
+			// if (grd == "C") t += 5 * 3;
+
+			//pom
+			/*var grd = document.getElementById("s7").value;
+			if (grd == "A+") t += 10 * 2;
+			if (grd == "A") t += 9 * 2;
+			if (grd == "B+") t += 8 * 2;
+			if (grd == "B") t += 7 * 2;
+			if (grd == "C+") t += 6 * 2;
+			if (grd == "C") t += 5 * 2;*/
+
+			document.getElementById("a2").innerHTML = "SPI: " + (t / 15).toFixed(3);
+		}
+	</script>
+</html>

@@ -1,0 +1,215 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap"
+			rel="stylesheet"
+		/>
+		<script type="text/javascript">
+			function goToNewPage() {
+				var url = document.getElementById("list").value;
+				if (url != "none") {
+					window.location = url;
+				}
+			}
+		</script>
+
+		<title>HomePage(SPI)</title>
+		<style>
+			@media only screen and (max-width: 3840px) {
+				body {
+					background-color: black;
+				}
+				.head {
+					font-family: "DM Serif Display", serif;
+					text-align: center;
+					position: relative;
+					font-weight: 500;
+					font-size: 3rem;
+					color: orange;
+				}
+				.main {
+					justify-content: center;
+				}
+				table {
+					margin-left: auto;
+					margin-right: auto;
+					padding: 2rem;
+				}
+				.Semoption {
+					font-family: "DM Serif Display", serif;
+					font-size: 1.5rem;
+					padding: 5px;
+					color: red;
+				}
+				.branchoption {
+					font-family: "DM Serif Display", serif;
+					font-size: 1.5rem;
+					padding: 5px;
+					color: red;
+				}
+				#selection,
+				#list {
+					font-family: "Raleway", sans-serif;
+					font-weight: bold;
+					font-size: 18px;
+					border: solid black 1px;
+					border-radius: 6px;
+					background-color: rgba(237, 219, 102, 0.799);
+					color: rgba(14, 6, 6, 0.877);
+				}
+				select option:hover {
+					/*           box-shadow : 0 0 10px 100px #000000 inset; */
+					background-color: whitesmoke;
+				}
+				.glow-on-hover {
+					width: 195px;
+					height: 50px;
+					border: none;
+					outline: none;
+					left: 40px;
+					color: #fff;
+					font-size: 21px;
+					font-family: "DM Serif Display", serif;
+					background: #111;
+					cursor: pointer;
+					position: relative;
+					z-index: 0;
+					border-radius: 10px;
+				}
+
+				.glow-on-hover:before {
+					content: "";
+					background: linear-gradient(
+						45deg,
+						orange,
+						red,
+						yellow,
+						red,
+						orange,
+						red,
+						yellow,
+						red,
+						orange
+					);
+					position: absolute;
+					top: -2px;
+					left: -2px;
+					background-size: 400%;
+					z-index: -1;
+					filter: blur(5px);
+					width: calc(100% + 4px);
+					height: calc(100% + 4px);
+					animation: glowing 20s linear infinite;
+					opacity: 0;
+					transition: opacity 0.3s ease-in-out;
+					border-radius: 10px;
+				}
+
+				.glow-on-hover:active {
+					color: #000;
+				}
+
+				.glow-on-hover:active:after {
+					background: transparent;
+				}
+
+				.glow-on-hover:hover:before {
+					opacity: 1;
+				}
+
+				.glow-on-hover:after {
+					z-index: -1;
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: #111;
+					left: 0;
+					top: 0;
+					border-radius: 10px;
+				}
+
+				@keyframes glowing {
+					0% {
+						background-position: 0 0;
+					}
+					50% {
+						background-position: 400% 0;
+					}
+					100% {
+						background-position: 0 0;
+					}
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">Institute Of Technology</div>
+		<div class="main">
+			<table>
+				<tbody>
+					<tr>
+						<td>
+							<div class="Semoption">
+								Semester:
+								<select name="Semester" id="selection">
+									<option value="1">1</option>
+									<!-- <option value="2">2</option>  -->
+									<option value="3">3</option>
+									<!-- <option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option> -->
+								</select>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="branchoption">
+								Branch:
+								<select name="list" class="decorate" id="list">
+									<option value="ec.html">Electronics and Communication</option>
+									<option value="cse.html">Computer Science</option>
+									<option value="ei.html">
+										Electronics and Instrumentation
+									</option>
+									<option value="electrical.html">Electrical</option>
+									<option value="mech.html">Mechanical</option>
+									<option value="chemical.html">Chemical</option>
+									<option value="civil.html">Civil</option>
+								</select>
+								<br />
+								<br />
+
+								<button
+									onclick="goToNewPage()"
+									class="glow-on-hover"
+									type="button"
+								>
+									Calculate
+								</button>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript">
+		function goToNewPage() {
+			var url = document.getElementById("list").value;
+			if (url != "none") {
+				window.location = url;
+			}
+		}
+	</script>
+</html>
